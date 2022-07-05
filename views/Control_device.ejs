@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="highcharts.js"></script>
+    <script src="export-data.js"></script>
+    <script src="accessibility.js"></script>
+    <script src="xuly.js"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>Smart home</title>
+</head>
+
+<body style="width: 980px; margin: 0 auto">
+    <div class="title">
+        SMARTHOME
+        <!-- <div style="width: 66.5%;"></div> -->
+        <a href="/" class="form">Thông tin môi trường</a>
+    </div>
+    <div class="main-title">
+        BẢNG ĐIỀU KHIỂN THIẾT BỊ
+    </div>
+    <div class="main-content">
+
+        <div class="right-block" style="margin: 0 auto; width: 980px">
+            <div>
+                <div class="livingroom-control">
+                    <div class="main-title">
+                        PHÒNG KHÁCH
+                    </div>
+                    <div class="element-container">
+                        <div id="livingrom-light" class="element-block appliances turn-off">
+                            <img class="element-icon" src="lightbulb.png" alt="">
+                            <input class="checkbox" type="checkbox" name="" onclick="livingroomLight()" id="livingroomLight">
+                            <div class="element-text">
+                                <p>Đèn</p>
+                            </div>
+                        </div>
+                        <div id="livingroom-air-conditioner" class="element-block appliances turn-off">
+                            <img class="element-icon" src="air-conditioner.png" alt="">
+                            <input class="checkbox" type="checkbox" name="" onclick="livingroomAirConditioner()" id="livingroomAirConditioner">
+                            <div class="element-text">
+                                <p>Điều hoà</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-container">
+                        <div id="television-container" class="element-block appliances width100 center turn-off">
+                            <img class="element-icon" src="television.png" alt="">
+                            <input class="checkbox" type="checkbox" name="" onclick="television()" id="television">
+                            <div class="element-text">
+                                <p>Ti vi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bedroom-control">
+                    <div class="main-title">
+                        PHÒNG NGỦ
+                    </div>
+                    <div class="element-container">
+                        <div id="bedroom-light" class="element-block appliances turn-off">
+                            <img class="element-icon" src="table-lamp.png" alt="">
+                            <input class="checkbox" type="checkbox" name="" onclick="bedroomLight()" id="bedroomLight">
+                            <div class="element-text">
+                                <p>Đèn ngủ</p>
+                            </div>
+                        </div>
+                        <div id="bedroom-air-conditioner" class="element-block appliances turn-off">
+                            <img class="element-icon" src="air-conditioner.png" alt="">
+                            <input class="checkbox" type="checkbox" name="" onclick="bedroomAirConditioner()" id="bedroomAirConditioner">
+                            <div class="element-text">
+                                <p>Điều hoà</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="element-container">
+                        <div id="bedroom-vent" class="element-block appliances width100 center turn-off">
+                            <img class="element-icon" src="air-vent.png" alt="">
+                            <input class="checkbox" type="checkbox" name="" onclick="airVent()" id="airVent">
+                            <div class="element-text">
+                                <p>Cửa thông gió</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
